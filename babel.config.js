@@ -1,4 +1,5 @@
 module.exports = {
+  env: { production: { plugins: ['transform-remove-console'] } },
   plugins: [
     [
       'module-resolver',
