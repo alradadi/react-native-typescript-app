@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "hoist-non-react-statics": "^3.3.2",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-navigation": "^5.0.0-alpha.10"
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
+    "@types/hoist-non-react-statics": "^3.3.1",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.60.25",
     "@types/react-test-renderer": "16.9.1",
