@@ -5,9 +5,9 @@ import { Images } from '@/src/assets/images';
 import { SettingsPage } from '@/src/components/SettingsPage';
 
 export class SettingsScreen extends React.Component {
-  public static navID = 'SettingsScreen';
+  static navId = 'SettingsScreen';
 
-  public static options(): Options {
+  static options(): Options {
     return {
       topBar: {
         title: {
@@ -21,7 +21,7 @@ export class SettingsScreen extends React.Component {
     };
   }
 
-  public render() {
+  render() {
     return <SettingsPage />;
   }
 }

@@ -1,6 +1,6 @@
 import { Navigation } from 'react-native-navigation';
+import { withNavProvider } from 'rnn-hooks';
 
-import { withNavProvider } from '@/src/navigation/hocs/withNavProvider';
 import { AboutScreen } from '@/src/screens/AboutScreen';
 import { HomeScreen } from '@/src/screens/HomeScreen';
 import { RandomScreen } from '@/src/screens/RnadomScreen';
@@ -10,6 +10,6 @@ const SCREENS = [HomeScreen, SettingsScreen, AboutScreen, RandomScreen];
 
 export const registerScreens = () => {
   SCREENS.forEach(screen =>
-    Navigation.registerComponent(screen.navID, () => withNavProvider(screen)),
+    Navigation.registerComponent(screen.navId, () => withNavProvider(screen)),
   );
 };

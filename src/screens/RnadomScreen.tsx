@@ -4,9 +4,9 @@ import { Options } from 'react-native-navigation';
 import { RandomPage, RandomPageProps } from '@/src/components/RandomPage';
 
 export class RandomScreen extends React.Component<RandomPageProps> {
-  public static navID = 'RandomScreen';
+  static navId = 'RandomScreen';
 
-  public static options(): Options {
+  static options(): Options {
     return {
       topBar: {
         title: {
@@ -16,7 +16,7 @@ export class RandomScreen extends React.Component<RandomPageProps> {
     };
   }
 
-  public render() {
+  render() {
     return <RandomPage {...this.props} />;
   }
 }

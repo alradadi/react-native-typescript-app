@@ -9,8 +9,8 @@ export const SettingsPage = memo(() => (
 
 const styles = StyleSheet.create({
   root: {
-    flex: 1,
     alignItems: 'center',
+    flex: 1,
     justifyContent: 'center',
   },
 });

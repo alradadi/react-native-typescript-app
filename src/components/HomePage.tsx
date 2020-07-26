@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import { useNav } from 'rnn-hooks';
 
-import { useNav } from '@/src/navigation/hooks/useNav';
 import { RandomScreen } from '@/src/screens/RnadomScreen';
 
 export const HomePage = memo(() => {
@@ -27,8 +27,8 @@ export const HomePage = memo(() => {
 
 const styles = StyleSheet.create({
   root: {
-    flex: 1,
     alignItems: 'center',
+    flex: 1,
     justifyContent: 'center',
   },
   spacing: {

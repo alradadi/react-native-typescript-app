@@ -13,8 +13,8 @@ export const RandomPage = memo<RandomPageProps>(({ color }) => (
 
 const styles = StyleSheet.create({
   root: {
-    flex: 1,
     alignItems: 'center',
+    flex: 1,
     justifyContent: 'center',
   },
 });

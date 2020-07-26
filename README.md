@@ -21,8 +21,9 @@ This is a react native starter app that I use to get me started with my projects
     ```
   
 ## Included Packages:
-- [react-native (0.61.5)](https://github.com/facebook/react-native)
+- [react-native (0.63.2)](https://github.com/facebook/react-native)
 - [react-native-navigation](https://github.com/wix/react-native-navigation)
+- [rnn-hooks](https://github.com/alradadi/rnn-hooks)
 - [eslint-config-rn-ts](https://github.com/alradadi/eslint-config-rn-ts)
 - [babel-plugin-transform-remove-console](https://www.npmjs.com/package/babel-plugin-transform-remove-console)
 
@@ -30,13 +31,17 @@ This is a react native starter app that I use to get me started with my projects
 
 ## Usage
 
-Some helpful navigation hooks are included with the project to simplify working with navigation.
+Some helpful navigation hooks are provided by [rnn-hooks](https://github.com/alradadi/rnn-hooks) to simplify working with navigation.
 
-- `useComponentId`
-- `useIsScreenVisible`
 - `useNav`
 - `useNavigationButtonPressed`
 
-`useNav` is the one you'll be using the most.
-Look in [HomePage](./src/components/HomePage.tsx) component to see how it is used.
+```
+ const nav = useNav();
+
+  const handlePush = () => {
+    nav.push(RandomScreen, { color: 'red' });
+  };
+```
+See the [HomePage](./src/components/HomePage.tsx) component to see how it is used.
 

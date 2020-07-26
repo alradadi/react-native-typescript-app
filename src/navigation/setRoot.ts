@@ -9,9 +9,9 @@ export const setRoot = () =>
     root: {
       bottomTabs: {
         children: [
-          createBottomTab(HomeScreen.navID),
-          createBottomTab(SettingsScreen.navID),
-          createBottomTab(AboutScreen.navID),
+          createBottomTab(HomeScreen.navId),
+          createBottomTab(SettingsScreen.navId),
+          createBottomTab(AboutScreen.navId),
         ],
       },
     },

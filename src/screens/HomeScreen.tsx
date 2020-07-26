@@ -5,9 +5,9 @@ import { Images } from '@/src/assets/images';
 import { HomePage } from '@/src/components/HomePage';
 
 export class HomeScreen extends React.Component {
-  public static navID = 'HomeScreen';
+  static navId = 'HomeScreen';
 
-  public static options(): Options {
+  static options(): Options {
     return {
       topBar: {
         title: {
@@ -21,7 +21,7 @@ export class HomeScreen extends React.Component {
     };
   }
 
-  public render() {
+  render() {
     return <HomePage />;
   }
 }

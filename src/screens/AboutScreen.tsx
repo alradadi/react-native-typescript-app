@@ -5,9 +5,9 @@ import { Images } from '@/src/assets/images';
 import { AboutPage } from '@/src/components/AboutPage';
 
 export class AboutScreen extends React.Component {
-  public static navID = 'AboutScreen';
+  static navId = 'AboutScreen';
 
-  public static options(): Options {
+  static options(): Options {
     return {
       topBar: {
         title: {
@@ -21,7 +21,7 @@ export class AboutScreen extends React.Component {
     };
   }
 
-  public render() {
+  render() {
     return <AboutPage />;
   }
 }
