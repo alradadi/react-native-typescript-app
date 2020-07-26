@@ -39,9 +39,9 @@ Some helpful navigation hooks are provided by [rnn-hooks](https://github.com/alr
 ```
  const nav = useNav();
 
-  const handlePush = () => {
+ const handlePush = () => {
     nav.push(RandomScreen, { color: 'red' });
-  };
+ };
 ```
 See the [HomePage](./src/components/HomePage.tsx) component to see how it is used.
 
